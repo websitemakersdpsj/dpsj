@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DPS Jamnagar - Facilities</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<!-- Add Font Awesome for social icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<header class="navbar">
+  <div class="container nav-inner">
+    <img src="DPSJ Logo.png" alt="logo" class="logonav">
+    <a class="brand" href="index.html">DPS Jamnagar</a>
+    <button id="mobile-toggle-7" class="mobile-toggle">☰</button>
+    <nav id="nav-menu-7" class="nav-menu">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="genesis.html" class="nav-link">Genesis</a>
+      <a href="campus.html" class="nav-link">Campus</a>
+      <a href="sports.html" class="nav-link">Sports</a>
+      <a href="life-skills.html" class="nav-link">Life Skills</a>
+      <a href="mission.html" class="nav-link">Mission</a>
+      <a href="facilities.html" class="nav-link active">Facilities</a>
+      <a href="highlights.html" class="nav-link">Highlights</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="section container">
+  <h1>Facilities</h1>
+  <p class="lead">Our campus is equipped with modern infrastructure for holistic learning.</p>
+  <div class="facilities-grid">
+    <div class="card"><h3>Infirmary</h3><p>On-campus medical support and health awareness programs.</p></div>
+    <div class="card"><h3>Computer Lab</h3><p>Advanced computers, internet access, and coding tools for students.</p></div>
+    <div class="card"><h3>Library</h3><p>Wide range of books, journals, and digital learning resources.</p></div>
+    <div class="card"><h3>Sports Grounds</h3><p>Outdoor and indoor spaces for all physical activities.</p></div>
+    <div class="card"><h3>Auditorium</h3><p>For cultural events, presentations, and guest lectures.</p></div>
+    <div class="card"><h3>Eco-Friendly Spaces</h3><p>Gardens, tree plantations, and sustainability initiatives.</p></div>
+  </div>
+</section>
+
+<footer class="footer small">
+  <div class="container">
+    <p>© 2025 Delhi Public School Jamnagar</p>
+    <div class="social-links">
+      <a href="https://www.facebook.com/dpsjamnagar/" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook fa-lg"></i>
+      </a>
+      <a href="https://www.instagram.com/dpsjamnagar/" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram fa-lg"></i>
+      </a>
+      <a href="https://www.x.com/dpsjamnagar/" target="_blank" aria-label="Twitter">
+        <i class="fab fa-twitter fa-lg"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  // Select all mobile toggle buttons
+  const toggles = document.querySelectorAll('.mobile-toggle');
+
+  toggles.forEach(toggle => {
+    // Get the corresponding menu ID by replacing 'mobile-toggle' with 'nav-menu'
+    const menuId = toggle.id.replace('mobile-toggle', 'nav-menu');
+    const menu = document.getElementById(menuId);
+
+    if (menu) {
+      toggle.addEventListener('click', () => {
+        menu.classList.toggle('open');
+      });
+    }
+  });
+});
+</script>
+
+
+
+<style>
+.footer {
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.footer .social-links {
+  margin-top: 10px;
+}
+.footer .social-links a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer .social-links a:hover {
+  color: #00bcd4;
+}
+</style>
+</body>
+</html>
