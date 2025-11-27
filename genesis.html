@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DPS Jamnagar - Genesis</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<!-- Add Font Awesome for social icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<header class="navbar">
+  <div class="container nav-inner">
+    <img src="DPSJ Logo.png" alt="logo" class="logonav">
+    <a class="brand" href="index.html">DPS Jamnagar</a>
+    <button id="mobile-toggle-2" class="mobile-toggle">☰</button>
+    <nav id="nav-menu-2" class="nav-menu">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="genesis.html" class="nav-link active">Genesis</a>
+      <a href="campus.html" class="nav-link">Campus</a>
+      <a href="sports.html" class="nav-link">Sports</a>
+      <a href="life-skills.html" class="nav-link">Life Skills</a>
+      <a href="mission.html" class="nav-link">Mission</a>
+      <a href="facilities.html" class="nav-link">Facilities</a>
+      <a href="highlights.html" class="nav-link">Highlights</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="section container">
+
+    <div class="video-card">
+    <h2>DPSJ 10 Year Transformation</h2>
+    <video controls>
+        <source src="DPSJ 10 Year Transformation.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+  <h1>DPS Genesis</h1>
+  <p class="lead">From Church High School in 1941 to DPS Jamnagar today — a journey of growth, excellence and values.</p>
+  <article class="content">
+    <h2>Early Beginnings</h2>
+    <p>The journey began in the President’s Estate, later evolving into Naveen Bharat School, and finally Delhi Public School Jamnagar.</p>
+    <h2>Growth & Milestones</h2>
+    <ul>
+      <li><strong>1941:</strong> Classes began at President’s Estate.</li>
+      <li><strong>1949:</strong> Relocation and expansion of facilities.</li>
+      <li><strong>1960s-1990s:</strong> Labs, library, and athletics developed.</li>
+      <li><strong>2000s onwards:</strong> Digital classrooms, life skills programs, co-curricular excellence.</li>
+    </ul>
+    <h2>Philosophy</h2>
+    <p>DPS Jamnagar educates the whole child academically, morally, and socially, emphasizing curiosity, collaboration, and responsibility.</p>
+  </article>
+  <div class="table-container">
+    <h2 class="headingtable">Former Members of The DPS Society</h2>
+    <table class="green-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position / Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Late Dr. Tara Chand</td><td>Former Chairman – The DPS Society</td></tr>
+            <tr><td>Late Shri Dharma Vira</td><td>Former President – The DPS Society</td></tr>
+            <tr><td>Late Justice Sarv Mittra Sikri</td><td>Former Vice President – The DPS Society</td></tr>
+            <tr><td>Late Shri M.N. Seth</td><td>Former Chairman – The DPS Society</td></tr>
+            <tr><td>Late Dr. Prem Kirpal</td><td>Former Chairman & President – The DPS Society</td></tr>
+            <tr><td>Late Justice A.N. Grover</td><td>Former Chairman – The DPS Society</td></tr>
+            <tr><td>Late Dr. H.L. Anand</td><td>Former Member Medical – The DPS Society</td></tr>
+            <tr><td>Late Gen. J. S. Bawa</td><td>Former Member – The DPS Society</td></tr>
+            <tr><td>Late Dr. Kamla Chowdhary</td><td>Former Vice President – The DPS Society</td></tr>
+            <tr><td>Late Shri J.K. Chowdhury</td><td>Former Member – The DPS Society</td></tr>
+            <tr><td>Late Shri Din Dayal</td><td>Former Chairman – The DPS Society</td></tr>
+            <tr><td>Late Lt. Gen. Pradip Shikha Roy, AVSM</td><td>Former Engineer – The DPS Society</td></tr>
+            <tr><td>Late Shri Prem Sehgal</td><td>Former Vice Chairman – The DPS Society</td></tr>
+            <tr><td>Late Shri Vishnu Sahai</td><td>Former Treasurer – The DPS Society</td></tr>
+            <tr><td>Late Justice N.N. Goswamy</td><td>Former Chairman – The DPS Society</td></tr>
+            <tr><td>Late Dr. A. Nanda</td><td>Former Member – The DPS Society</td></tr>
+            <tr><td>Late Shri Khushwant Singh</td><td>Former Member – The DPS Society</td></tr>
+            <tr><td>Late Mr. V.R. Vaish</td><td>Former Member – The DPS Society</td></tr>
+        </tbody>
+    </table>
+</div>
+</section>
+
+<footer class="footer small">
+  <div class="container">
+    <p>© 2025 Delhi Public School Jamnagar</p>
+    <div class="social-links">
+      <a href="https://www.facebook.com/dpsjamnagar/" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook fa-lg"></i>
+      </a>
+      <a href="https://www.instagram.com/dpsjamnagar/" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram fa-lg"></i>
+      </a>
+      <a href="https://www.x.com/dpsjamnagar/" target="_blank" aria-label="Twitter">
+        <i class="fab fa-twitter fa-lg"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  // Select all mobile toggle buttons
+  const toggles = document.querySelectorAll('.mobile-toggle');
+
+  toggles.forEach(toggle => {
+    // Get the corresponding menu ID by replacing 'mobile-toggle' with 'nav-menu'
+    const menuId = toggle.id.replace('mobile-toggle', 'nav-menu');
+    const menu = document.getElementById(menuId);
+
+    if (menu) {
+      toggle.addEventListener('click', () => {
+        menu.classList.toggle('open');
+      });
+    }
+  });
+});
+</script>
+
+
+<style>
+.footer {
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.footer .social-links {
+  margin-top: 10px;
+}
+.footer .social-links a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer .social-links a:hover {
+  color: #00bcd4;
+}
+</style>
+</body>
+</html>

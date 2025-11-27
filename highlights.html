@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DPSJ</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="DPSJ Logo.png">
+<!-- Add Font Awesome for social icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<header class="navbar">
+  <div class="container nav-inner">
+    <img src="DPSJ Logo.png" alt="logo" class="logonav">
+    <a class="brand" href="index.html">DPS Jamnagar</a>
+    <button id="mobile-toggle" class="mobile-toggle">☰</button>
+    <nav id="nav-menu" class="nav-menu">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="genesis.html" class="nav-link">Genesis</a>
+      <a href="campus.html" class="nav-link">Campus</a>
+      <a href="sports.html" class="nav-link">Sports</a>
+      <a href="life-skills.html" class="nav-link">Life Skills</a>
+      <a href="mission.html" class="nav-link">Mission</a>
+      <a href="facilities.html" class="nav-link">Facilities</a>
+      <a href="highlights.html" class="nav-link active">Highlights</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero container">
+  <div class="hero-vertical">
+    <div class="staff-card1">
+      <img src="Education World Award 2025-26.JPG" alt="Photo" class="photo-large">
+      <img src="Last Page.png" alt="Photo" class="photo-large">
+      <img src="Sustainable Fashion Show-1.JPG" alt="Photo" class="photo-large">
+    </div>
+    <div class="staff-card2">
+      <img src="Field Trip-2.jpeg" alt="Photo" class="photo-large">
+      <img src="coedschool.png" alt="Photo" class="photo-large">
+      <img src="footballteam.jpg" alt="Photo" class="photo-large">
+    </div>
+    <div class="staff-card3">
+      <img src="IMG_0025.JPG" alt="Photo" class="photo-large">
+      <img src="Cleanliness Project-4.JPG" alt="Photo" class="photo-large">
+      <img src="PEOP-1.jpg" alt="Photo" class="photo-large">
+    </div>
+
+
+<footer class="footer small">
+  <div class="container">
+    <p>© 2025 Delhi Public School Jamnagar</p>
+    <div class="social-links">
+      <a href="https://www.facebook.com/dpsjamnagar/" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook fa-lg"></i>
+      </a>
+      <a href="https://www.instagram.com/dpsjamnagar/" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram fa-lg"></i>
+      </a>
+      <a href="https://www.x.com/dpsjamnagar/" target="_blank" aria-label="Twitter">
+        <i class="fab fa-twitter fa-lg"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  // Select all mobile toggles on the page
+  const toggles = document.querySelectorAll('.mobile-toggle');
+
+  toggles.forEach(toggle => {
+    const menuId = toggle.id.replace('mobile-toggle', 'nav-menu'); 
+    const menu = document.getElementById(menuId);
+
+    if (menu) {
+      toggle.addEventListener('click', () => {
+        menu.classList.toggle('open');
+      });
+    }
+  });
+});
+</script>
+
+
+<style>
+.footer {
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.footer .social-links {
+  margin-top: 10px;
+}
+.footer .social-links a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer .social-links a:hover {
+  color: #00bcd4;
+}
+</style>
+</body>
+</html>
