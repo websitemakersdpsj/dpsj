@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DPS Jamnagar - Sports</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<!-- Add Font Awesome for social icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<header class="navbar">
+  <div class="container nav-inner">
+    <img src="DPSJ Logo.png" alt="logo" class="logonav">
+    <a class="brand" href="index.html">DPS Jamnagar</a>
+    <button id="mobile-toggle-4" class="mobile-toggle">☰</button>
+    <nav id="nav-menu-4" class="nav-menu">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="genesis.html" class="nav-link">Genesis</a>
+      <a href="campus.html" class="nav-link">Campus</a>
+      <a href="sports.html" class="nav-link active">Sports</a>
+      <a href="life-skills.html" class="nav-link">Life Skills</a>
+      <a href="mission.html" class="nav-link">Mission</a>
+      <a href="facilities.html" class="nav-link">Facilities</a>
+      <a href="highlights.html" class="nav-link">Highlights</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="section container">
+  <div class="video-card">
+    <h2>Annual Sports Meet</h2>
+    <video controls>
+        <source src="PRAYAAS-Annual Sports Meet _ Day-03.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+  <h1>Sports at DPS Jamnagar</h1>
+  <p class="lead">We encourage students to pursue excellence in physical activities, teamwork, and discipline.</p>
+  <div class="content">
+    <h2>Outdoor Sports</h2>
+    <p>Football, cricket, athletics, and basketball with professional coaching and competitions.</p>
+    <h2>Indoor Sports</h2>
+    <p>Badminton, table tennis, yoga, and gymnastics to build flexibility, coordination, and focus.</p>
+    <h2>Events & Competitions</h2>
+    <p>Annual sports meets, inter-school tournaments, and friendly matches to foster teamwork and sportsmanship.</p>
+  </div>
+</section>
+
+<footer class="footer small">
+  <div class="container">
+    <p>© 2025 Delhi Public School Jamnagar</p>
+    <div class="social-links">
+      <a href="https://www.facebook.com/dpsjamnagar/" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook fa-lg"></i>
+      </a>
+      <a href="https://www.instagram.com/dpsjamnagar/" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram fa-lg"></i>
+      </a>
+      <a href="https://www.x.com/dpsjamnagar/" target="_blank" aria-label="Twitter">
+        <i class="fab fa-twitter fa-lg"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.getElementById('mobile-toggle-4');
+  const menu = document.getElementById('nav-menu-4');
+
+  if (toggle && menu) {
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('open');
+    });
+  }
+});
+</script>
+
+
+<style>
+.footer {
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.footer .social-links {
+  margin-top: 10px;
+}
+.footer .social-links a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer .social-links a:hover {
+  color: #00bcd4;
+}
+</style>
+</body>
+</html>

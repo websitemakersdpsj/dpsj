@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DPS Jamnagar - Mission & Vision</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<!-- Add Font Awesome for social icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<header class="navbar">
+  <div class="container nav-inner">
+    <img src="DPSJ Logo.png" alt="logo" class="logonav">
+    <a class="brand" href="index.html">DPS Jamnagar</a>
+    <button id="mobile-toggle-6" class="mobile-toggle">☰</button>
+    <nav id="nav-menu-6" class="nav-menu">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="genesis.html" class="nav-link">Genesis</a>
+      <a href="campus.html" class="nav-link">Campus</a>
+      <a href="sports.html" class="nav-link">Sports</a>
+      <a href="life-skills.html" class="nav-link">Life Skills</a>
+      <a href="mission.html" class="nav-link active">Mission</a>
+      <a href="facilities.html" class="nav-link">Facilities</a>
+      <a href="highlights.html" class="nav-link">Highlights</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="section container">
+  
+
+  <h1>Vision & Mission</h1>
+  <p class="lead">Our goal is to nurture students to become responsible, ethical, and enlightened citizens of the world.</p>
+  <div class="content">
+    <h2>Our Vision</h2>
+    <p>Preserve excellence in education, blend modern technology with Indian ethos, and prepare students for the 21st century.</p>
+    <h2>Our Mission</h2>
+    <ul>
+      <li>Provide quality education with strong values and ethical foundations.</li>
+      <li>Foster curiosity, creativity, and critical thinking.</li>
+      <li>Encourage environmental awareness and social responsibility.</li>
+      <li>Prepare students linguistically, culturally, and digitally for global opportunities.</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="footer small">
+  <div class="container">
+    <p>© 2025 Delhi Public School Jamnagar</p>
+    <div class="social-links">
+      <a href="https://www.facebook.com/dpsjamnagar/" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook fa-lg"></i>
+      </a>
+      <a href="https://www.instagram.com/dpsjamnagar/" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram fa-lg"></i>
+      </a>
+      <a href="https://www.x.com/dpsjamnagar/" target="_blank" aria-label="Twitter">
+        <i class="fab fa-twitter fa-lg"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.getElementById('mobile-toggle-6');
+  const menu = document.getElementById('nav-menu-6');
+
+  if (toggle && menu) {
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('open');
+    });
+  }
+});
+</script>
+
+
+<style>
+.footer {
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.footer .social-links {
+  margin-top: 10px;
+}
+.footer .social-links a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer .social-links a:hover {
+  color: #00bcd4;
+}
+</style>
+</body>
+</html>
