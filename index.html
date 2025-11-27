@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DPSJ</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="DPSJ Logo.png">
+<!-- Add Font Awesome for social icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<header class="navbar">
+  <div class="container nav-inner">
+    <img src="DPSJ Logo.png" alt="logo" class="logonav">
+    <a class="brand" href="index.html">DPS Jamnagar</a>
+    <button id="mobile-toggle" class="mobile-toggle">☰</button>
+    <nav id="nav-menu" class="nav-menu">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="genesis.html" class="nav-link">Genesis</a>
+      <a href="campus.html" class="nav-link">Campus</a>
+      <a href="sports.html" class="nav-link">Sports</a>
+      <a href="life-skills.html" class="nav-link">Life Skills</a>
+      <a href="mission.html" class="nav-link">Mission</a>
+      <a href="facilities.html" class="nav-link">Facilities</a>
+      <a href="highlights.html" class="nav-link">Highlights</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero container">
+  <div class="hero-vertical">
+    <div class="staff-card">
+      <img src="staff.jpg" alt="Staff Photo" class="staff-photo-large">
+      <p class="photo-caption">All Staff Members</p>
+    </div>
+
+    <div class="hero-text">
+      <h1>Welcome to Delhi Public School, Jamnagar</h1>
+      <p class="lead">A green, modern campus nurturing academic excellence, sports, and life skills for 21st-century learners.</p>
+
+      <div class="quick-cards">
+        <div class="card"><h3>Modern Campus</h3><p>Safe, eco-friendly campus with labs, library and sports facilities.</p></div>
+        <div class="card"><h3>Experienced Faculty</h3><p>Dedicated teachers fostering creativity, curiosity, and values.</p></div>
+        <div class="card"><h3>Holistic Growth</h3><p>Focus on academics, life skills, environmental awareness, and values.</p></div>
+      </div>
+
+      <p class="cta-row">
+        <a href="mission.html" class="btn">Our Mission</a>
+        <a href="contact.html" class="btn outline">Contact Us</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section class="section container">
+  <h2>Highlights</h2>
+  <div class="highlights-grid">
+    <div class="highlight"><h4>Academics</h4><p>Structured curriculum, project-based learning, and assessments to foster mastery.</p></div>
+    <div class="highlight"><h4>Sports</h4><p>Indoor & outdoor sports facilities with coaching for all levels.</p></div>
+    <div class="highlight"><h4>Clubs & Activities</h4><p>Debate, robotics, music, art, dramatics, environment and social clubs.</p></div>
+    <div class="highlight"><h4>Values</h4><p>Service-oriented activities, communal harmony, and environmental awareness.</p></div>
+  </div>
+</section>
+
+<section class="section alt container">
+  <h2>Explore</h2>
+  <div class="explore-grid">
+    <a href="genesis.html" class="explore-card"><h3>History & Genesis</h3><p>Discover DPS Jamnagar’s journey from 1941 to now.</p></a>
+    <a href="campus.html" class="explore-card"><h3>Our Campus</h3><p>Facilities, classrooms, labs, and green initiatives.</p></a>
+    <a href="life-skills.html" class="explore-card"><h3>Life Skills</h3><p>Programs helping students apply knowledge, attitude and values.</p></a>
+    <a href="contact.html" class="explore-card"><h3>Contact & Admissions</h3><p>Get in touch and send your queries easily.</p></a>
+  </div>
+</section>
+<footer class="footer small">
+  <div class="container">
+    <p>© 2025 Delhi Public School Jamnagar</p>
+    <div class="social-links">
+      <a href="https://www.facebook.com/dpsjamnagar/" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook fa-lg"></i>
+      </a>
+      <a href="https://www.instagram.com/dpsjamnagar/" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram fa-lg"></i>
+      </a>
+      <a href="https://www.x.com/dpsjamnagar/" target="_blank" aria-label="Twitter">
+        <i class="fab fa-twitter fa-lg"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.getElementById('mobile-toggle');
+  const menu = document.getElementById('nav-menu');
+
+  if (toggle && menu) {
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('open');
+    });
+  }
+});
+</script>
+
+
+<style>
+.footer {
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.footer .social-links {
+  margin-top: 10px;
+}
+.footer .social-links a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer .social-links a:hover {
+  color: #00bcd4;
+}
+</style>
+</body>
+</html>

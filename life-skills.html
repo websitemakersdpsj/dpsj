@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DPS Jamnagar - Life Skills</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<!-- Add Font Awesome for social icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<header class="navbar">
+  <div class="container nav-inner">
+    <img src="DPSJ Logo.png" alt="logo" class="logonav">
+    <a class="brand" href="index.html">DPS Jamnagar</a>
+    <button id="mobile-toggle-5" class="mobile-toggle">☰</button>
+    <nav id="nav-menu-5" class="nav-menu">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="genesis.html" class="nav-link">Genesis</a>
+      <a href="campus.html" class="nav-link">Campus</a>
+      <a href="sports.html" class="nav-link">Sports</a>
+      <a href="life-skills.html" class="nav-link active">Life Skills</a>
+      <a href="mission.html" class="nav-link">Mission</a>
+      <a href="facilities.html" class="nav-link">Facilities</a>
+      <a href="highlights.html" class="nav-link">Highlights</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="section container">
+  <div class="staff-card">
+      <img src="Old Age Home-2.jpg" alt="Old Age Home Photo" class="basketball-photo-large">
+      <p class="photo-caption">Old Age Home Visit</p>
+    </div>
+  <h1>Life Skills Programs</h1>
+  <p class="lead">We focus on helping students apply knowledge, attitude, and values in everyday life.</p>
+  <div class="content">
+    <h2>Personal Skills</h2>
+    <p>Time management, goal setting, problem solving, and self-awareness.</p>
+    <h2>Social Skills</h2>
+    <p>Teamwork, communication, leadership, empathy, and conflict resolution.</p>
+    <h2>Environmental Awareness</h2>
+    <p>Eco-clubs, sustainability projects, recycling programs, and nature camps.</p>
+    <h2>Digital Literacy</h2>
+    <p>Safe and responsible technology usage, coding workshops, and online research skills.</p>
+  </div>
+</section>
+
+<footer class="footer small">
+  <div class="container">
+    <p>© 2025 Delhi Public School Jamnagar</p>
+    <div class="social-links">
+      <a href="https://www.facebook.com/dpsjamnagar/" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook fa-lg"></i>
+      </a>
+      <a href="https://www.instagram.com/dpsjamnagar/" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram fa-lg"></i>
+      </a>
+      <a href="https://www.x.com/dpsjamnagar/" target="_blank" aria-label="Twitter">
+        <i class="fab fa-twitter fa-lg"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.getElementById('mobile-toggle-5');
+  const menu = document.getElementById('nav-menu-5');
+
+  if (toggle && menu) {
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('open');
+    });
+  }
+});
+</script>
+
+<style>
+.footer {
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.footer .social-links {
+  margin-top: 10px;
+}
+.footer .social-links a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer .social-links a:hover {
+  color: #00bcd4;
+}
+</style>
+</body>
+</html>
